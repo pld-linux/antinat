@@ -1,12 +1,12 @@
 Summary:	A SOCKS server for SOCKS4 and SOCKS5
 Summary(pl):	Serwer SOCKS dla SOCKS4 i SOCKS5
 Name:		antinat
-Version:	0.66
+Version:	0.71
 Release:	0.1
 License:	GPL
 Group:		Daemons
-Source0:	http://yallara.cs.rmit.edu.au/%7Emalsmith/C0A00201/%{name}/%{name}-%{version}.tar.bz2
-# Source0-md5:	98a447c933bf604bd5236df700994fa8
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+# Source0-md5:	842899a5fa705df1b0b8d8edee372fa2
 # doesn't exist in SOURCES but probably needed to do s/%{name}-%{version}/%{name}/ and add DESTDIR
 #Patch0:		%{name}-makefile.patch
 URL:		http://yallara.cs.rmit.edu.au/~malsmith/products/antinat/
