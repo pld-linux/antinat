@@ -114,7 +114,7 @@ rm -fR $RPM_BUILD_ROOT
 %{_libdir}/%{name}/resolvers/libipv4.so
 %{_libdir}/%{name}/resolvers/libname.so
 %{_libdir}/%{name}/revres/libipv4.so
-%{_libdir}/antinat-%{version}/versions/libv5.so
+%{_libdir}/%{name}/versions/libv5.so
 
 %files socks4
 %defattr(644,root,root,755)
@@ -123,7 +123,7 @@ rm -fR $RPM_BUILD_ROOT
 
 %files logging
 %defattr(644,root,root,755)
-%{_libdir}/antinat-/loggers/*
+%{_libdir}/%{name}/loggers/*
 %{_localstatedir}
 
 %files filtering
