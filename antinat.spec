@@ -5,7 +5,7 @@ Version:	0.64
 Release:	0.1
 License:	GPL
 Group:		Daemons
-Source0:	http://yallara.cs.rmit.edu.au/~malsmith/products/antinat/%{name}-%{version}.tar.bz2
+Source0:	http://yallara.cs.rmit.edu.au/%7Emalsmith/C0A00201/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	08250f314de6203fb1ee1b542fcbb02f
 URL:		http://yallara.cs.rmit.edu.au/~malsmith/products/antinat/
 BuildRequires:	libds-devel >= 1.2.0
