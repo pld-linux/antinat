@@ -92,7 +92,7 @@ Requires:	antinat = %{version}
 Support for IPv6 connections, to allow the server to connect to v6
 hosts and be connected to from v6 hosts.
 
-%description ipv6 -l pl[B
+%description ipv6 -l pl
 Wsparcie dla po³±czeñ IPv6 umo¿liwiaj±ce serwerowi ³±czenie sie z i do
 hostów IPv6.
 
