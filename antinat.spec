@@ -7,6 +7,7 @@ License:	GPL
 Group:		Daemons
 Source0:	http://yallara.cs.rmit.edu.au/%7Emalsmith/C0A00201/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	08250f314de6203fb1ee1b542fcbb02f
+Patch0:		%{name}-makefile.patch
 URL:		http://yallara.cs.rmit.edu.au/~malsmith/products/antinat/
 BuildRequires:	libds-devel >= 1.2.0
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -76,15 +77,23 @@ and receive UDP packets through the SOCKS server.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
-export CXXFLAGS="-O2"
-%configure --datadir=%{_libdir} --with-ipv6
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+
+%configure \
+	--datadir=%{_libdir} \
+	--with-ipv6
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
 	datadir=$RPM_BUILD_ROOT%{_libdir}
 
 %clean
@@ -96,41 +105,41 @@ rm -fR $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/antinat.conf
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/*
-%{_libdir}/antinat-%{version}/address/libipv4.so
-%{_libdir}/antinat-%{version}/version5/authenticators/libunpw.so
-%{_libdir}/antinat-%{version}/version5/authenticators/unpwsources
-%{_libdir}/antinat-%{version}/version5/commands/libconn.so
-%{_libdir}/antinat-%{version}/version5/commands/libbind.so
-%{_libdir}/antinat-%{version}/version5/commands/libident.so
-%{_libdir}/antinat-%{version}/resolvers/libipv4.so
-%{_libdir}/antinat-%{version}/resolvers/libname.so
-%{_libdir}/antinat-%{version}/revres/libipv4.so
+%{_libdir}/%{name}/address/libipv4.so
+%{_libdir}/%{name}/version5/authenticators/libunpw.so
+%{_libdir}/%{name}/version5/authenticators/unpwsources
+%{_libdir}/%{name}/version5/commands/libconn.so
+%{_libdir}/%{name}/version5/commands/libbind.so
+%{_libdir}/%{name}/version5/commands/libident.so
+%{_libdir}/%{name}/resolvers/libipv4.so
+%{_libdir}/%{name}/resolvers/libname.so
+%{_libdir}/%{name}/revres/libipv4.so
 %{_libdir}/antinat-%{version}/versions/libv5.so
 
 %files socks4
 %defattr(644,root,root,755)
-%{_libdir}/antinat-%{version}/version4/*
-%{_libdir}/antinat-%{version}/versions/libv4.so
+%{_libdir}/%{name}/version4/*
+%{_libdir}/%{name}/versions/libv4.so
 
 %files logging
 %defattr(644,root,root,755)
-%{_libdir}/antinat-%{version}/loggers/*
+%{_libdir}/antinat-/loggers/*
 %{_localstatedir}
 
 %files filtering
 %defattr(644,root,root,755)
-%{_libdir}/antinat-%{version}/filters/*
+%{_libdir}/%{name}/filters/*
 
 %files anonymous
 %defattr(644,root,root,755)
-%{_libdir}/antinat-%{version}/version5/authenticators/libanon.so
+%{_libdir}/%{name}/version5/authenticators/libanon.so
 
 %files ipv6
 %defattr(644,root,root,755)
-%{_libdir}/antinat-%{version}/address/libipv6.so
-%{_libdir}/antinat-%{version}/resolvers/libipv6.so
-%{_libdir}/antinat-%{version}/revres/libipv6.so
+%{_libdir}/%{name}/address/libipv6.so
+%{_libdir}/%{name}/resolvers/libipv6.so
+%{_libdir}/%{name}/revres/libipv6.so
 
 %files udp
 %defattr(644,root,root,755)
-%{_libdir}/antinat-%{version}/version5/commands/libudp.so
+%{_libdir}/%{name}/version5/commands/libudp.so
