@@ -72,7 +72,15 @@ Requires:	antinat = %{version}
 Support for anonymous (non-authenticated) connections in antinat. If
 this package is not installed, clients must give the username and
 password credentials of a user on the server to proceed. Note that
-socks4 will also provide anonymous connections, in effect.
+antinat-socks4 package will also provide anonymous connections, in
+effect.
+
+%description anonymous -l pl
+Wsparcie w antinacie dla po³±czeñ anonimowych (nie autoryzowanych).
+Gdy ten pakiet nie jest zainstalowany, konieczne jest podanie przez
+klienta nazwy i has³a u¿ytkownika na serwerze. Nale¿y zauwa¿yæ, ¿e
+pakiet antinat-socks4 równie¿ w zasadzie umo¿liwia po³±czenia
+anonimowe.
 
 %package ipv6
 Summary:	Support for IPv6 connections in antinat
@@ -83,6 +91,10 @@ Requires:	antinat = %{version}
 %description ipv6
 Support for IPv6 connections, to allow the server to connect to v6
 hosts and be connected to from v6 hosts.
+
+%description ipv6 -l pl[B
+Wsparcie dla po³±czeñ IPv6 umo¿liwiaj±ce serwerowi ³±czenie sie z i do
+hostów IPv6.
 
 %package udp
 Summary:	Support for UDP association in antinat
