@@ -5,7 +5,7 @@ Version:	0.71
 Release:	0.1
 License:	GPL
 Group:		Daemons
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/antinat/%{name}-%{version}.tar.bz2
 # Source0-md5:	842899a5fa705df1b0b8d8edee372fa2
 # doesn't exist in SOURCES but probably needed to do s/%{name}-%{version}/%{name}/ and add DESTDIR
 #Patch0:		%{name}-makefile.patch
@@ -148,7 +148,7 @@ rm -fR $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README TODO
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/antinat.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/antinat.conf
 %attr(755,root,root) %{_bindir}/*
 %dir %{_libdir}/%{name}
 %dir %{_libdir}/%{name}/address
