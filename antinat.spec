@@ -30,7 +30,7 @@ Serwer SOCKS dla SOCKS4 i SOCKS5.
 Summary:	Support for SOCKS4 in antinat
 Summary(pl):	Wsparcie w antinacie dla SOCKS4
 Group:		Daemons
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description socks4
 Support for older style SOCKS4 connections in antinat. SOCKS4 is
@@ -46,7 +46,7 @@ autoryzacja, nie nale¿y instalowaæ tego pakietu.
 Summary:	Support for logging in antinat
 Summary(pl):	Wsparcie dla logowania przez antinata
 Group:		Daemons
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description logging
 Support for connection and summary logging in antinat.
@@ -58,7 +58,7 @@ Wsparcie dla logowania po³±czeñ i podsumowañ przez antinata.
 Summary:	Support for filtering in antinat
 Summary(pl):	Wsparcie dla filtrowania przez antinata
 Group:		Daemons
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description filtering
 Support for allowing and disallowing connections on the basis of some
@@ -74,7 +74,7 @@ oparciu o pewne kryteria. Zawiera filtry dzia³aj±ce w oparciu o adresy
 Summary:	Support for anonymous SOCKS5 connections in antinat
 Summary(pl):	Wsparcie w antinacie dla anonimowych po³±czeñ SOCKS5
 Group:		Daemons
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description anonymous
 Support for anonymous (non-authenticated) connections in antinat. If
@@ -94,7 +94,7 @@ anonimowe.
 Summary:	Support for IPv6 connections in antinat
 Summary(pl):	Wsparcie w antinacie dla po³±czeñ IPv6
 Group:		Daemons
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description ipv6
 Support for IPv6 connections, to allow the server to connect to v6
@@ -108,7 +108,7 @@ hostów IPv6.
 Summary:	Support for UDP association in antinat
 Summary(pl):	Wsparcie w antinacie dla kojarzenia UDP
 Group:		Daemons
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description udp
 Support for UDP association over SOCKSv5. This allows hosts to send
