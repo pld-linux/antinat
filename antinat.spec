@@ -1,5 +1,5 @@
 Summary:	A SOCKS server for SOCKS4 and SOCKS5
-Summary(pl):	Serwer SOCKS dla SOCKS4 i SOCKS5
+Summary(pl.UTF-8):   Serwer SOCKS dla SOCKS4 i SOCKS5
 Name:		antinat
 Version:	0.71
 Release:	0.1
@@ -23,12 +23,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A SOCKS server for SOCKS4 and SOCKS5.
 
-%description -l pl
+%description -l pl.UTF-8
 Serwer SOCKS dla SOCKS4 i SOCKS5.
 
 %package socks4
 Summary:	Support for SOCKS4 in antinat
-Summary(pl):	Wsparcie w antinacie dla SOCKS4
+Summary(pl.UTF-8):   Wsparcie w antinacie dla SOCKS4
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -37,26 +37,26 @@ Support for older style SOCKS4 connections in antinat. SOCKS4 is
 limited to anonymous only connections, and if authentication is
 required, do not install this package.
 
-%description socks4 -l pl
-Wsparcie w antinacie dla starego typu po³±czeñ SOCKS4. SOCKS4 jest
-ograniczone do po³±czeñ anonimowych, wiêc je¶li wymagana jest
-autoryzacja, nie nale¿y instalowaæ tego pakietu.
+%description socks4 -l pl.UTF-8
+Wsparcie w antinacie dla starego typu poÅ‚Ä…czeÅ„ SOCKS4. SOCKS4 jest
+ograniczone do poÅ‚Ä…czeÅ„ anonimowych, wiÄ™c jeÅ›li wymagana jest
+autoryzacja, nie naleÅ¼y instalowaÄ‡ tego pakietu.
 
 %package logging
 Summary:	Support for logging in antinat
-Summary(pl):	Wsparcie dla logowania przez antinata
+Summary(pl.UTF-8):   Wsparcie dla logowania przez antinata
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
 %description logging
 Support for connection and summary logging in antinat.
 
-%description logging -l pl
-Wsparcie dla logowania po³±czeñ i podsumowañ przez antinata.
+%description logging -l pl.UTF-8
+Wsparcie dla logowania poÅ‚Ä…czeÅ„ i podsumowaÅ„ przez antinata.
 
 %package filtering
 Summary:	Support for filtering in antinat
-Summary(pl):	Wsparcie dla filtrowania przez antinata
+Summary(pl.UTF-8):   Wsparcie dla filtrowania przez antinata
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -65,14 +65,14 @@ Support for allowing and disallowing connections on the basis of some
 criteria in antinat. Included are filters for IPv4 source and
 destination addresses, as well as ports.
 
-%description filtering -l pl
-Wsparcie dla umo¿liwiania i blokowania przez antinata po³±czeñ w
-oparciu o pewne kryteria. Zawiera filtry dzia³aj±ce w oparciu o adresy
-¼ród³owe i docelowe, jak te¿ w oparciu o porty.
+%description filtering -l pl.UTF-8
+Wsparcie dla umoÅ¼liwiania i blokowania przez antinata poÅ‚Ä…czeÅ„ w
+oparciu o pewne kryteria. Zawiera filtry dziaÅ‚ajÄ…ce w oparciu o adresy
+ÅºrÃ³dÅ‚owe i docelowe, jak teÅ¼ w oparciu o porty.
 
 %package anonymous
 Summary:	Support for anonymous SOCKS5 connections in antinat
-Summary(pl):	Wsparcie w antinacie dla anonimowych po³±czeñ SOCKS5
+Summary(pl.UTF-8):   Wsparcie w antinacie dla anonimowych poÅ‚Ä…czeÅ„ SOCKS5
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -83,16 +83,16 @@ password credentials of a user on the server to proceed. Note that
 antinat-socks4 package will also provide anonymous connections, in
 effect.
 
-%description anonymous -l pl
-Wsparcie w antinacie dla po³±czeñ anonimowych (nie autoryzowanych).
+%description anonymous -l pl.UTF-8
+Wsparcie w antinacie dla poÅ‚Ä…czeÅ„ anonimowych (nie autoryzowanych).
 Gdy ten pakiet nie jest zainstalowany, konieczne jest podanie przez
-klienta nazwy i has³a u¿ytkownika na serwerze. Nale¿y zauwa¿yæ, ¿e
-pakiet antinat-socks4 równie¿ w zasadzie umo¿liwia po³±czenia
+klienta nazwy i hasÅ‚a uÅ¼ytkownika na serwerze. NaleÅ¼y zauwaÅ¼yÄ‡, Å¼e
+pakiet antinat-socks4 rÃ³wnieÅ¼ w zasadzie umoÅ¼liwia poÅ‚Ä…czenia
 anonimowe.
 
 %package ipv6
 Summary:	Support for IPv6 connections in antinat
-Summary(pl):	Wsparcie w antinacie dla po³±czeñ IPv6
+Summary(pl.UTF-8):   Wsparcie w antinacie dla poÅ‚Ä…czeÅ„ IPv6
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -100,13 +100,13 @@ Requires:	%{name} = %{version}-%{release}
 Support for IPv6 connections, to allow the server to connect to v6
 hosts and be connected to from v6 hosts.
 
-%description ipv6 -l pl
-Wsparcie dla po³±czeñ IPv6 umo¿liwiaj±ce serwerowi ³±czenie sie z i do
-hostów IPv6.
+%description ipv6 -l pl.UTF-8
+Wsparcie dla poÅ‚Ä…czeÅ„ IPv6 umoÅ¼liwiajÄ…ce serwerowi Å‚Ä…czenie sie z i do
+hostÃ³w IPv6.
 
 %package udp
 Summary:	Support for UDP association in antinat
-Summary(pl):	Wsparcie w antinacie dla kojarzenia UDP
+Summary(pl.UTF-8):   Wsparcie w antinacie dla kojarzenia UDP
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -114,9 +114,9 @@ Requires:	%{name} = %{version}-%{release}
 Support for UDP association over SOCKSv5. This allows hosts to send
 and receive UDP packets through the SOCKS server.
 
-%description udp -l pl
-Wsparcie dla kojarzenia UDP poprzez SOCKSv5. Umo¿liwia to wysy³anie i
-odbiór pakietów za po¶rednictwem serwera SOCKS.
+%description udp -l pl.UTF-8
+Wsparcie dla kojarzenia UDP poprzez SOCKSv5. UmoÅ¼liwia to wysyÅ‚anie i
+odbiÃ³r pakietÃ³w za poÅ›rednictwem serwera SOCKS.
 
 %prep
 %setup -q
