@@ -1,5 +1,5 @@
 Summary:	A SOCKS server for SOCKS4 and SOCKS5
-Summary(pl.UTF-8):   Serwer SOCKS dla SOCKS4 i SOCKS5
+Summary(pl.UTF-8):	Serwer SOCKS dla SOCKS4 i SOCKS5
 Name:		antinat
 Version:	0.71
 Release:	0.1
@@ -28,7 +28,7 @@ Serwer SOCKS dla SOCKS4 i SOCKS5.
 
 %package socks4
 Summary:	Support for SOCKS4 in antinat
-Summary(pl.UTF-8):   Wsparcie w antinacie dla SOCKS4
+Summary(pl.UTF-8):	Wsparcie w antinacie dla SOCKS4
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -44,7 +44,7 @@ autoryzacja, nie należy instalować tego pakietu.
 
 %package logging
 Summary:	Support for logging in antinat
-Summary(pl.UTF-8):   Wsparcie dla logowania przez antinata
+Summary(pl.UTF-8):	Wsparcie dla logowania przez antinata
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -56,7 +56,7 @@ Wsparcie dla logowania połączeń i podsumowań przez antinata.
 
 %package filtering
 Summary:	Support for filtering in antinat
-Summary(pl.UTF-8):   Wsparcie dla filtrowania przez antinata
+Summary(pl.UTF-8):	Wsparcie dla filtrowania przez antinata
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -72,7 +72,7 @@ oparciu o pewne kryteria. Zawiera filtry działające w oparciu o adresy
 
 %package anonymous
 Summary:	Support for anonymous SOCKS5 connections in antinat
-Summary(pl.UTF-8):   Wsparcie w antinacie dla anonimowych połączeń SOCKS5
+Summary(pl.UTF-8):	Wsparcie w antinacie dla anonimowych połączeń SOCKS5
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -92,7 +92,7 @@ anonimowe.
 
 %package ipv6
 Summary:	Support for IPv6 connections in antinat
-Summary(pl.UTF-8):   Wsparcie w antinacie dla połączeń IPv6
+Summary(pl.UTF-8):	Wsparcie w antinacie dla połączeń IPv6
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
@@ -106,7 +106,7 @@ hostów IPv6.
 
 %package udp
 Summary:	Support for UDP association in antinat
-Summary(pl.UTF-8):   Wsparcie w antinacie dla kojarzenia UDP
+Summary(pl.UTF-8):	Wsparcie w antinacie dla kojarzenia UDP
 Group:		Daemons
 Requires:	%{name} = %{version}-%{release}
 
