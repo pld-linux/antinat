@@ -9,7 +9,7 @@ Source0:	http://dl.sourceforge.net/antinat/%{name}-%{version}.tar.bz2
 # Source0-md5:	842899a5fa705df1b0b8d8edee372fa2
 # doesn't exist in SOURCES but probably needed to do s/%{name}-%{version}/%{name}/ and add DESTDIR
 #Patch0:		%{name}-makefile.patch
-URL:		http://yallara.cs.rmit.edu.au/~malsmith/products/antinat/
+URL:		http://antinat.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libds-devel >= 1.2.0
